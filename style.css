@@ -1,0 +1,72 @@
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  height: 105px;
+  padding: 30px;
+  background: orange;
+  text-align: center;
+}
+
+/*
+    ULTIMATELY scroll-padding needs to go on the <html> element, not <body>. 
+    IF THIS DEMO IS BROKEN, try that
+  */
+html {
+  --top-spacing: 100px;
+  // scroll-padding-top: var(--top-spacing);
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  color: goldenrod;
+  margin-top: 0%;
+}
+body {
+  padding: 0 20px;
+  margin-top: 15%;
+  padding: 0;
+  background-size: cover;
+  vertical-align: bottom;
+  background-image: url('bg.jpeg');
+}
+.container {
+  margin-top: 0%;
+  width: 40%;
+  height: 345px;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, rgb(23, 0, 128), rgb(8, 8, 8));
+  border-image-slice: 1;
+  padding: 40px;
+  background: lightgoldenrodyellow;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.box input[type='button'] {
+  width: 90%;
+  background-image: linear-gradient(to right, chocolate, white);
+  margin-bottom: 3px;
+  box-shadow: 1px 3px chocolate;
+  height: 30px;
+  border-radius: 5px;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+hr.solid {
+  border-top: 1px solid #bbb;
+}
+.box input[type='text'] {
+  width: 88%;
+  box-shadow: 1px 1px grey;
+  height: 25px;
+  border-radius: 5px;
+}
+.box input[type='date'] {
+  width: 88%;
+  box-shadow: 1px 1px grey;
+  height: 25px;
+  border-radius: 5px;
+}
