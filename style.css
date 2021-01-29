@@ -1,3 +1,11 @@
+textarea.md-textarea-scroll {
+  overflow-y: visible;
+}
+textarea.md-textarea {
+  padding: 0;
+  resize: none;
+  min-height: 3rem;
+}
 header.fixed {
   position: fixed;
   top: 0;
@@ -5,7 +13,7 @@ header.fixed {
   width: fit-content;
   height: 105px;
   padding: 30px;
-  background: orange;
+  background: black;
   text-align: center;
 }
 
@@ -13,10 +21,6 @@ header.fixed {
     ULTIMATELY scroll-padding needs to go on the <html> element, not <body>. 
     IF THIS DEMO IS BROKEN, try that
   */
-html {
-  --top-spacing: 100px;
-  // scroll-padding-top: var(--top-spacing);
-}
 
 .title {
   text-align: center;
@@ -27,9 +31,9 @@ html {
 body {
   padding: 0 20px;
   margin-top: 15%;
-  padding: 0;
   background-size: cover;
   vertical-align: bottom;
+  overflow: hidden;
   background-image: url('bg.jpeg');
 }
 .container {
@@ -52,7 +56,7 @@ body {
   box-shadow: 1px 3px chocolate;
   height: 30px;
   border-radius: 5px;
-  color: black;
+  color: brown;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 hr.solid {
